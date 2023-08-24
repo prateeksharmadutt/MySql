@@ -1,0 +1,41 @@
+
+
+show databases;
+
+select database();
+use sakila;
+show tables;
+show columns from actor;
+select*from actor;
+select*from sakila.language;
+select*from language where name="english";
+select*from language where name='e';
+select*from language where name>'i';
+select first_name from actor where first_name>'f';
+select*from film where title like'%dinosaur%';
+
+select*from film where description like'%drama%';
+
+-- question a se les hona chaiye
+
+select title,description ,release_year from film where title like'a%les';
+select *from film where title like'a_e%';
+
+-- q1 i need to get all the movie tile film id release year on the 
+-- 1, second char c se chalu ho 
+-- 2  wo datA chaiye jiski andar last 2 char an hone chaiye stating chr 
+-- 3esi movie chiye jike andar 4 chararter honge and   t 
+-- 4 find out whose character movie is sec chr f and four  chr i movie end egg se hona chiye
+-- find those movie we should 5 chacter mid a
+
+select title,film_id ,release_year,description from film where title like '_c%';
+
+select title ,film_id ,release_year,description from film where title like 'a%an'; 
+select title ,film_id ,release_year,description from film where title like '%T___';
+select title ,film_id ,release_year,description from film where title like '_f_i%egg%';
+select title ,film_id ,release_year,description from film where title like '__a__';
+show tABLES;
+SELECT * FROM film;
+select title,film_id ,release_year,description from film where title like '__a__%';
+
+
